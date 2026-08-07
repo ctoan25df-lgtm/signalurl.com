@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SIGNAL URL
 
-## Getting Started
+`https://signalurl.com` — **부비주소 신호 장부**
 
-First, run the development server:
+검색에 동시에 나타나는 여러 부비주소 주장·호스트·관찰일을 대조하고, 강한 변경 신호와
+약한 신호·미러/경유 잡음을 구분해 **단일 공식 도메인을 단정하지 않는** 독립 장부입니다.
+
+## 기존 사이트와 역할 분리
+
+| 사이트 | 역할 |
+|--------|------|
+| **signalurl.com (여기)** | 다중 주소 주장 신호 대조 · 미러 분류 |
+| [bubi.yuheungpick.com](https://bubi.yuheungpick.com) | 클릭 전 출처·호스트·확인일 **검증 절차** |
+| [norangbubi.com](https://norangbubi.com) | 도착 후 카테고리·순위 **이용 가이드** |
+| bamdalin.com | 부산·경남·울산 **공개 목록** (별도 플랫폼 CTA) |
+
+## 문서 경로
+
+- `/` — 현황판
+- `/claims` — 주장 대조판
+- `/names` — 명칭 층위 지도
+- `/signals` — 강·약 변경 신호
+- `/mirrors` — 미러·경유 분류
+- `/desk` — 편집 원칙
+
+## 로컬 실행
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 검증
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run lint
+npm run build
+```
+# signalurl.com
