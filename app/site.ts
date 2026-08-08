@@ -6,8 +6,8 @@ export const SITE = {
   tagline: "부비주소 신호 장부",
   url: "https://signalurl.com",
   owner: "시그널URL 편집 데스크",
-  reviewedAt: "2026-08-07",
-  edition: "001",
+  reviewedAt: "2026-08-08",
+  edition: "002",
   locale: "ko_KR",
   language: "ko-KR",
   description:
