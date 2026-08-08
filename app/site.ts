@@ -7,7 +7,7 @@ export const SITE = {
   url: "https://signalurl.com",
   owner: "시그널URL 편집 데스크",
   reviewedAt: "2026-08-08",
-  edition: "002",
+  edition: "003",
   locale: "ko_KR",
   language: "ko-KR",
   description:

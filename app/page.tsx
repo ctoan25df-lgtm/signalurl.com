@@ -154,7 +154,15 @@ export default function HomePage() {
             <p className="hero-lede">
               검색에 동시에 떠 있는 서로 다른 주소 주장·호스트·관찰일을 한 장부에
               올립니다. 강한 변경 신호가 모이기 전에는 단일 공식 도메인을 올리지
-              않습니다.
+              않습니다. 한 후보를 클릭하기 직전 검증·접속·사칭 점검은{" "}
+              <a href={SITE.relatedSites.bubiCheck.url} rel="noopener noreferrer">
+                bubi.yuheungpick.com
+              </a>
+              으로, 도착 후 카테고리·순위는{" "}
+              <a href={SITE.relatedSites.bibigi.url} rel="noopener noreferrer">
+                norangbubi.com
+              </a>
+              으로 넘깁니다.
             </p>
             <div className="hero-actions">
               <Link className="button button-primary" href="/claims">
@@ -163,17 +171,21 @@ export default function HomePage() {
               <Link className="button button-accent" href="/mirrors">
                 미러·경유 분류
               </Link>
-              {BAMDALIN.regions.map((region) => (
-                <a
-                  key={region.slug}
-                  className="button"
-                  href={bamdalinRegionUrl(region.slug)}
-                  target="_blank"
-                  rel="noopener noreferrer sponsored"
-                >
-                  {region.label} 목록
-                </a>
-              ))}
+              <a
+                className="button"
+                href={SITE.relatedSites.bubiCheck.url}
+                rel="noopener noreferrer"
+              >
+                검증 체크
+              </a>
+              <a
+                className="button"
+                href={bamdalinRegionUrl("busan")}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+              >
+                밤달 부산
+              </a>
             </div>
           </div>
 
