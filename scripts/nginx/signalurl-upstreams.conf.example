@@ -1,0 +1,20 @@
+# /etc/nginx/conf.d/signalurl-upstreams.conf
+# signalurl.com HTML → :3000
+# image.signalurl.com HTML만 → :3001  (GIF는 nginx가 public/에서 직접)
+
+upstream signalurl_app {
+    server 127.0.0.1:3000;
+    keepalive 16;
+}
+
+upstream image_signalurl_app {
+    server 127.0.0.1:3001;
+    keepalive 8;
+}
+
+limit_req_zone $binary_remote_addr zone=signalurl_site:10m rate=20r/s;
+limit_conn_zone $binary_remote_addr zone=signalurl_conn:10m;
+
+limit_req_zone $binary_remote_addr zone=image_gif:10m rate=8r/s;
+limit_req_zone $binary_remote_addr zone=image_site:10m rate=10r/s;
+limit_conn_zone $binary_remote_addr zone=image_conn:10m;
