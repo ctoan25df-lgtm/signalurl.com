@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const SITE = {
   name: "SIGNAL URL",
   koreanName: "시그널URL",
-  tagline: "부비주소 신호 장부",
+  tagline: "부비 미러·사칭 주소 구분",
   url: "https://signalurl.com",
   owner: "시그널URL 편집 데스크",
   reviewedAt: "2026-08-08",

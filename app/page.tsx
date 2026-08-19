@@ -10,7 +10,7 @@ import {
 } from "./site";
 
 export const metadata = pageMetadata({
-  title: "부비주소 신호 장부 — 다중 주장·호스트 대조",
+  title: "부비 미러사이트 구분 | 사칭 주소 판별 기준",
   description: SITE.description,
   path: "/",
 });
