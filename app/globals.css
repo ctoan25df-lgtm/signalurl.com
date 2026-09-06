@@ -469,6 +469,7 @@ a {
 }
 
 .desk-card h3,
+.desk-card h4,
 .feature-card h3,
 .mirror-card h3,
 .signal-card h3,
@@ -588,63 +589,15 @@ a {
   color: var(--muted);
 }
 
-.related-desks,
-.bamdalin-panel,
-.verdict-banner {
-  margin-top: 28px;
-  padding: 22px;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  background: var(--surface);
-}
 
-.related-desks ul {
-  display: grid;
-  gap: 12px;
-  margin: 12px 0;
-  padding: 0;
-  list-style: none;
-}
 
-.related-desks li {
-  display: grid;
-  gap: 4px;
-}
 
-.related-desks a {
-  font-weight: 700;
-  color: var(--signal);
-}
 
-.related-desks span,
-.related-desks p {
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.bamdalin-panel {
-  display: grid;
-  gap: 18px;
-}
 
 @media (min-width: 860px) {
-  .bamdalin-panel {
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
-  }
 }
 
-.bamdalin-panel h2 {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 28px;
-  letter-spacing: -0.04em;
-}
 
-.bamdalin-panel p {
-  margin: 10px 0 0;
-  color: var(--muted);
-}
 
 .verdict-banner p {
   margin: 0;
@@ -887,4 +840,48 @@ td a {
   .hero {
     padding-top: 36px;
   }
+}
+
+/* 한 페이지 통합 후 추가된 구역 묶음·목록 */
+.zone-group {
+  margin-top: 40px;
+}
+
+.zone-group h3 {
+  margin: 0 0 16px;
+  font-family: var(--font-display);
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+.plain-list {
+  margin: 12px 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 8px;
+  line-height: 1.7;
+}
+
+.policy-list {
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  list-style: none;
+  padding: 0;
+}
+
+.policy-list li {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  font-size: 14px;
+}
+
+.feature-card .console-grid {
+  margin-top: 14px;
+}
+
+.feature-card .console-grid dd {
+  font-weight: 500;
+  line-height: 1.6;
 }

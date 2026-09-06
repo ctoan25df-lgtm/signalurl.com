@@ -51,10 +51,10 @@ export default function OpenGraphImage() {
               lineHeight: 1.05,
             }}
           >
-            부비주소 신호 장부
+            울산 룸싸롱 권역 안내
           </div>
           <div style={{ fontSize: 28, opacity: 0.88, maxWidth: 820, lineHeight: 1.4 }}>
-            다중 주장 · 호스트 · 관찰일을 대조하고, 단일 공식 도메인을 단정하지 않습니다.
+            삼산·성남·무거·북구·동구·울주의 가격대 · 주차 · 심야 귀가를 한 페이지에서 비교합니다.
           </div>
         </div>
         <div style={{ fontSize: 22, opacity: 0.75 }}>signalurl.com</div>

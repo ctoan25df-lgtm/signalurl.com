@@ -32,7 +32,6 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
-  keywords: [...SITE.keywords],
   alternates: { canonical: SITE.url },
   openGraph: {
     type: "website",
@@ -77,7 +76,7 @@ const websiteSchema = {
       "@id": `${SITE.url}/#website`,
       url: SITE.url,
       name: SITE.name,
-      alternateName: [SITE.koreanName, SITE.tagline, "부비주소 신호"],
+      alternateName: [SITE.koreanName, SITE.tagline, "울산 룸살롱 안내"],
       description: SITE.description,
       inLanguage: SITE.language,
       dateModified: SITE.reviewedAt,
